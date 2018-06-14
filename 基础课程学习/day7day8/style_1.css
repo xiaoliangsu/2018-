@@ -1,0 +1,77 @@
+html {
+  font-family: sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+.fake-content {
+  background-color: #a60000;
+  color: white;
+  padding: 10px;
+  height: 2000px;
+  margin-left: 470px;
+}
+.info-box {
+  width: 450px;
+  height: 400px;
+  position: fixed;
+  top: 0;
+}
+
+.info-box ul {
+  padding-left: 0;
+  margin-top: 0;
+}
+
+.info-box li{
+  list-style-type: none;
+  width: 150px;
+  float: left;
+}
+
+.info-box li a {
+  display: inline-block;
+  width:100%;
+  text-decoration: none;
+  line-height:3;
+  background-color: red;
+  color: black;
+  text-align: center;
+
+}
+
+.info-box li a:focus, .info-box li a:hover {
+  background-color: #a60000;
+  color: white;
+}
+
+.info-box li a.active {
+  background-color: #a60000;
+  color: white;
+}
+
+.info-box .panels {
+  height: 352px;
+  position: relative;
+  clear: both;
+}
+/* 最后我们清除（clear）浮动，设置在上面CSS中，这样避免影响布局的剩余部分。 */
+
+.info-box article {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 352px;
+  padding: 10px;
+  color: white;
+  background-color: #a60000;
+}
+
+.info-box .active-panel {
+  z-index: 1;
+}
