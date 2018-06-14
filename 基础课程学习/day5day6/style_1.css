@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+h2{
+  line-height: 2;
+}
+ul{
+
+  padding:0;
+  list-style: none;
+  
+}
+.basic-info li,
+.basic-contact li{
+  display: inline-block;
+}
+.basic-info li:nth-child(2n){
+  margin-right: 3rem;
+  white-space: pre;
+}
+.basic-contact li:nth-child(2n){
+  margin-right: 3rem;
+  white-space: pre;
+}
+li:nth-child(2n+1){
+    font-weight: 900;
+}
