@@ -9,7 +9,7 @@ header{
 }
 
 .header-container{
-    width:960px;
+   max-width:960px;
     height:60px;
     margin:0 auto;
     line-height: 60px;
@@ -92,7 +92,7 @@ header{
 }
 .main-nav{
     margin: 0 auto;
-    width:960px;
+    max-width:960px;
     height:60px;
     position: relative;
 }
@@ -144,7 +144,7 @@ footer{
 }
 
 .container{
-    width:960px;
+    max-width:960px;
     margin: 0 auto;
    
     
