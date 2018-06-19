@@ -152,12 +152,18 @@ footer{
 .grid{
     display: flex;
     flex-wrap: wrap;
+    border:1px solid red;
 
 }
 .content{
     flex:1;
     padding:80px;
     border:1px solid #eeeeee;
-    margin-left:10px;
+    margin-right:10px;
     margin-bottom: 10px;
 }
+
+.content:last-child{
+    margin-right:0;
+}
+
