@@ -1,0 +1,163 @@
+body{
+    margin:0;
+    padding:0;
+}
+header{
+    width:100%;
+    height:60px;
+    background-color: #333333;
+}
+
+.header-container{
+    width:960px;
+    height:60px;
+    margin:0 auto;
+    line-height: 60px;
+}
+.header-container:after{
+    content: ".";
+    display:block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+
+.logo{
+    float: left;
+    color:#ffffff;
+    font-size: 20px;
+    
+}
+.nav{
+    float:right;
+}
+.nav-ul{
+    list-style: none;
+    padding:0;
+    margin:0;
+    margin-top:-20px;
+    font-size: 10px;
+
+
+}
+.nav-ul li{
+    display: inline;
+}
+.nav-ul  a{
+    color:#ffffff;
+
+}
+.banner{
+    width:100%;
+    background-color:#67bb33;
+    height:200px;
+    position: relative;
+}
+.banner-container{
+  
+    position: absolute;
+    bottom:6%;
+    left:70%;
+
+}
+.banner-ul{
+    list-style: none;
+    padding:0;
+    margin:0;
+    margin-top:-20px;
+    font-size: 10px;
+}
+.banner-ul li{
+    display: inline-block;
+   
+}
+.banner-ul  a{
+    color:#ffffff;
+    display: inline-block;
+    width:10px;
+    padding: 10px;
+    margin: 0 2px;
+    background-color: #b2dd99;
+}
+.banner-ul  a:hover,
+.banner-ul  a:focus{
+    padding-top:20px;
+    background-color: #e0f1d6;
+}
+.main-nav-container{
+    height:60px;
+    border-bottom: 1px solid #eeeeee;
+    width: 100%;
+
+}
+.main-nav{
+    margin: 0 auto;
+    width:960px;
+    height:60px;
+    position: relative;
+}
+
+.main-nav-ul{
+    list-style: none;
+    padding:0;
+    margin:0;
+    position: absolute;
+    bottom:0;
+}
+.main-nav-ul li{
+    display: inline;
+}
+.main-nav-ul a{
+    display: inline-block;
+    width:80px;
+    text-decoration: none;
+    border:1px solid #eeeeee;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height:40px;
+    line-height: 40px;
+    text-align: center;
+    columns: #000000;;
+    background-color: #eeeeee;
+}
+.main-nav-ul a:focus{
+    background-color: #ffffff;
+    border-bottom-color: #ffffff;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    background-color: #333333;
+    width:100%;
+    height:60px;
+    display: flex;
+    vertical-align: center;
+    text-align: center;
+}
+.copyright{
+    margin:0 auto; 
+    color:#ffffff;
+    height:60px;
+    line-height: 60px;
+
+}
+
+.container{
+    width:960px;
+    margin: 0 auto;
+   
+    
+}
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.content{
+    flex:1;
+    padding:80px;
+    border:1px solid #eeeeee;
+    margin-left:10px;
+    margin-bottom: 10px;
+}
