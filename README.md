@@ -1,6 +1,6 @@
 # 2018百度前端学院
 2018百度前端学院学习
-
+# css基础
 ## day5day6
 ### 三种简历
 
@@ -37,6 +37,7 @@ http://htmlpreview.github.io/?https://github.com/xiaoliangsu/2018-/blob/master/%
 
 ---
 
+# javascript 基础
 ## day17day18
 ### javascript基础
 1、预览猜数字游戏
