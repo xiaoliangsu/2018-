@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">    
+    <title>3的小游戏</title>
+</head>
+<body>        
+    <input class="input" type="number" placeholder="输入一个正整数">
+    <button class="btn">确认</button>
+    <p class="result">结果是：</p>
+
+    <script>
+        var inputField = document.querySelector(".input");
+        var btn = document.querySelector(".btn");
+        var resultField = document.querySelector(".result");
+        function num3Topa(){
+            var num = inputField.value;
+            var resultArr = [];
+            for(let i=0;i<num;i++){
+                if(i%3==0){
+                    resultArr.push("PA");
+                    continue;
+                }
+                if((i+"").indexOf("3")!==-1){
+                    console.log((i+"").indexOf("3"))
+                    resultArr.push("PA");
+                    continue;
+
+                }
+                resultArr.push(i);
+            }
+            resultField.textContent="结果是："+resultArr.toString();
+          
+
+        }
+        
+        btn.addEventListener("click",num3Topa);
+  
+        
+
+
+    </script>
+</body>
+</html>

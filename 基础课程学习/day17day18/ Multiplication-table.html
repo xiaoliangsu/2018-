@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>IFE ECMAScript</title>
+</head>
+<style>
+    #table {
+        width: 200px;
+        min-height: 25px;
+        line-height: 25px;
+        text-align: center;
+        border-color: #000000;
+        border-collapse: collapse;
+    }
+</style>
+
+<body>
+    <h1>乘法表</h1>
+
+    <script>
+        var tabNode = document.createElement("table");
+        tabNode.setAttribute("id", "table");
+        tabNode.setAttribute("border", "1");
+        
+
+        function makeMuti() {
+            for (let i = 1; i < 10; i++) {
+                var trNode = tabNode.insertRow();
+                for (let j = 1; j < 10; j++) {
+                    var result = i + "x" + j + "=" + (i * j);
+                    var tdNode = trNode.insertCell();
+                    tdNode.innerHTML = result;
+
+
+                }
+            }
+            document.body.appendChild(tabNode);
+        }
+        makeMuti();
+
+    </script>
+</body>
+
+</html>

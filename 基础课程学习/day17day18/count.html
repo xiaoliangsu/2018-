@@ -16,29 +16,32 @@
     <p id="result">运算结果</p>
     <script>
 
-        var num1=parseInt(document.getElementById("first-number").value);
-        var num2=parseInt(document.getElementById("second-number").value);
-        document.getElementById("first-number").oninput=function(){
-            num1=parseInt(document.getElementById("first-number").value); 
-           
+        var num1 = document.getElementById("first-number");
+        var num2 = document.getElementById("second-number");
+        var result = document.querySelector("#result");
+        var resultString = result.textContent;
+
+
+        document.getElementById("add-btn").onclick = function () {
+
+            result.textContent = resultString + (Number(num1.value) + Number(num2.value));
         }
-        document.getElementById("second-number").oninput=function(){
-            num2=parseInt(document.getElementById("second-number").value);
-         
+        document.getElementById("minus-btn").onclick = function () {
+            result.textContent = resultString + (Number(num1.value) - Number(num2.value));
         }
-        document.getElementById("add-btn").onclick=function(){
-            document.getElementById("result").innerHTML = num1+num2;
+        document.getElementById("times-btn").onclick = function () {
+            result.textContent = resultString + (Number(num1.value) * Number(num2.value));
         }
-        document.getElementById("minus-btn").onclick=function(){
-            document.getElementById("result").innerHTML = num1-num2;
+        document.getElementById("divide-btn").onclick = function () {
+            if (Number(num2.value) == 0) {
+                console.log("除数不能为0！");
+                result.textContent="除数不能为0!";
+            } else {
+                result.textContent = resultString + (Number(num1.value) / Number(num2.value));
+            }
+
         }
-        document.getElementById("times-btn").onclick=function(){
-            document.getElementById("result").innerHTML = num1*num2;
-        }
-        document.getElementById("divide-btn").onclick=function(){
-            document.getElementById("result").innerHTML = num1/num2;
-        }
-        
+
 
     </script>
 </body>

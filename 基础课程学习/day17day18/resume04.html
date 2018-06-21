@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>简历</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <link rel="stylesheet" href="style_4.css" />
+</head>
+
+<body>
+    <div class="container">
+        <header class="head">
+            <h1 class="title">简历</h1>
+        </header>
+        <div class="main">
+            <section>
+                <div class="main-header">
+                    <h2>基本信息</h2>
+                </div>
+                <ul class="basic-info">
+                    <li>姓名</li>
+                    <li> 张三</li>
+                    <li>性别</li>
+                    <li> 男</li>
+                    <li>应聘职位</li>
+                    <li> 前端工程师</li>
+                  
+                </ul>
+            </section>
+            <section>
+                <div class="main-header">
+                    <h2>联系方式</h2>
+                </div>
+                <ul class="basic-contact">
+                    <li>手机</li>
+                    <li> 1232341234</li>
+                    <li>Email </li>
+                    <li><a href="www.baidu.com"> josiene@baidu.com</a></li>
+                    <li>个人主页</li>
+                    <li><a href="www.baidu.com"> github</a></li>
+        
+                </ul>
+            </section>
+            <section>
+                <div class="main-header">
+                    <h2>能力描述</h2>
+                </div>
+                <div>
+                    <ul>
+                        <li>技术能力</li>
+                        <li>熟练掌握HTML,CSS,Javascript</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <ul>
+                        <li>综合能力</li>
+                        <li>良好的沟通，主动积极，努力勤奋</li>
+                    </ul>
+                </div>
+
+            </section>
+            <section>
+                <div class="main-header">
+                    <h2>教育经历</h2>
+                </div>
+                <div>
+                    <ul class="edu-info">
+                        <li>本科</li>
+                        <li>百度前端学院小薇学院</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <ul class="edu-info">
+                        <li>研究生</li>
+                        <li>百度前端学院大斌学院</li>
+                    </ul>
+                </div>
+            </section>
+            <section>
+                <div class="main-header">
+                    <h2>项目经历</h2>
+                </div>
+                <div>
+                    <ul>
+                        <li>小度小度</li>
+                        <li>作为前端工程师角色参与了ABC组件的开发</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <ul>
+                        <li>San Doc</li>
+                        <li>作为文档工程师参与了San Doc编写</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </div>
+
+
+<script>
+    function getTime(){
+        var nowTime = new Date().getHours();
+        var result;
+        console.log(nowTime);
+        if(nowTime<11){
+            result="上午好";
+        }else if(nowTime<14){
+            result = "中午好";
+        }else if(nowTime<18){
+            result="下午好";
+        }else{
+            result = "晚上好";
+        }
+        var helloNode = document.createElement("p");
+        helloNode.setAttribute("id","hellonode")
+        helloNode.textContent=result;
+        document.querySelector(".head").appendChild(helloNode);
+
+
+    };
+    getTime();
+
+
+    
+</script>
+
+
+
+</body>
+
+</html>
